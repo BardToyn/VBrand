@@ -1,0 +1,19 @@
+.circle {
+    width: 18px;
+    height: 18px;
+    display: var(--flex);
+    align-items: var(--cntr);
+    justify-content: var(--cntr);
+    border-radius: 50%;
+    background-color: var(--clr-black);
+    position: absolute;
+    pointer-events: none;
+    transition: transform 0.2s ease-out;
+    z-index: 1000;
+}
+
+@media screen and (max-width: 1024px) {
+    .circle {
+        display: none;
+    }
+}

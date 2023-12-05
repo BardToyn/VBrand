@@ -1,0 +1,52 @@
+.contact-link {
+    position: fixed;
+    bottom: 52px;
+    right: 52px;
+    display: var(--flex);
+    align-items: var(--cntr);
+    justify-content: var(--cntr);
+    z-index: 10;
+}
+
+.contact-link-text {
+    height: 95px;
+    width: 95px;
+    position: absolute;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+}
+
+@keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+  
+    to {
+      transform: rotate(360deg);
+    }
+}
+
+.contact-link-circle {
+    height: 72px;
+    width: 72px;
+    display: var(--flex);
+    align-items: var(--cntr);
+    justify-content: var(--cntr);
+    border-radius: 50px;
+    background-color: var(--clr-black);
+}
+
+.contact-link-img {
+    height: auto;
+    width: 3em;
+    display: block;
+}
+
+.contact-link:hover .contact-link-text {
+    opacity: 1;
+    animation: 10s linear infinite rotate;
+}
+
+.contact-link:active .contact-link-circle {
+    background-color: var(--clr-white);
+}

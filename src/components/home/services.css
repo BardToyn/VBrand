@@ -1,0 +1,117 @@
+.home-services {
+    padding: 120px 36px;
+}
+
+.home-services__wrap-title {
+    border-bottom: 1px solid var(--clr-black);
+}
+
+.home-services__title {
+    max-width: 928px;
+    color: var(--clr-black);
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 350;
+    line-height: 100%;
+}
+
+.home-services__list {
+    margin-top: 120px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.home-services__item {
+    padding: 24px;
+    border: 1px solid var(--clr-dark);
+    transition: 0.6s ease-in-out;
+}
+
+.home-services__item:hover {
+    background-color: var(--clr-black);
+}
+
+.home-services__item:hover .home-services__item-arrow {
+    filter: brightness(0) invert(1);
+}
+
+.home-services__item:hover .home-services__item-title {
+    color: var(--clr-white);
+}
+
+.home-services__item:hover .home-services__item-subtitle {
+    color: var(--clr-white);
+}
+
+.home-services__item:hover .home-services__item-text {
+    color: var(--clr-white);
+}
+
+.home-services__item-one {
+    grid-column-start: 1;
+    grid-row-start: 1;
+}
+
+.home-services__item-two {
+    grid-column-start: 2;
+    grid-row-start: 2;
+}
+
+.home-services__item-three {
+    grid-column-start: 3;
+    grid-row-start: 1;
+}
+
+.home-services__item-four {
+    grid-column-start: 4;
+    grid-row-start: 1;
+    border-left: 0;
+    border-bottom: 0;
+}
+
+.home-services__item-five {
+    grid-column-start: 4;
+    grid-row-start: 2;
+}
+
+.home-services__item-wrap-top {
+    display: var(--flex);
+    justify-content: var(--sp-bt);
+}
+
+.home-services__item-arrow {
+    height: 25px;
+    width: 25px;
+}
+
+.home-services__item-title {
+    margin-top: 0;
+    width: 200px;
+    white-space: pre-wrap;
+    color: var(--clr-black);
+    text-align: right;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 27px;
+    text-transform: uppercase;
+}
+
+.home-services__item-subtitle {
+    color: var(--clr-grey);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.home-services__item-text {
+    margin-bottom: 0;
+    color: var(--clr-black);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}

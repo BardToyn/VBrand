@@ -1,0 +1,144 @@
+@font-face {
+    font-family: 'Cygre';
+    src:  url('../fonts/Cygre/Cygre-Black.woff2') format('woff2'),
+          url('../fonts/Cygre/Cygre-Black.woff') format('woff'),
+          url('../fonts/Cygre/Cygre-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cygre';
+    src:  url('../fonts/Cygre/Cygre-Bold.woff2') format('woff2'),
+          url('../fonts/Cygre/Cygre-Bold.woff') format('woff'),
+          url('../fonts/Cygre/Cygre-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cygre';
+    src:  url('../fonts/Cygre/Cygre-Book.woff2') format('woff2'),
+          url('../fonts/Cygre/Cygre-Book.woff') format('woff'),
+          url('../fonts/Cygre/Cygre-Book.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cygre';
+    src:  url('../fonts/Cygre/Cygre-ExtraBold.woff2') format('woff2'),
+          url('../fonts/Cygre/Cygre-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cygre';
+    src:  url('../fonts/Cygre/Cygre-Light.woff2') format('woff2'),
+          url('../fonts/Cygre/Cygre-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cygre';
+    src:  url('../fonts/Cygre/Cygre-Medium.woff2') format('woff2'),
+          url('../fonts/Cygre/Cygre-Medium.woff') format('woff'),
+          url('../fonts/Cygre/Cygre-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cygre';
+    src:  url('../fonts/Cygre/Cygre-SemiBold.woff2') format('woff2'),
+          url('../fonts/Cygre/Cygre-SemiBold.woff') format('woff'),
+          url('../fonts/Cygre/Cygre-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cygre';
+    src:  url('../fonts/Cygre/Cygre-Thin.woff2') format('woff2'),
+          url('../fonts/Cygre/Cygre-Thin.woff') format('woff'),
+          url('../fonts/Cygre/Cygre-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+:root {
+    --clr-black: #000;
+    --clr-white: #fff;
+    --clr-dark: #00000080;
+    --clr-grey: #9A9A9A;
+    --clr-yellow: #FFE500;
+    --clr-dark-overlay: #00000025;
+
+    --none: none;
+    --flex: flex;
+    --cntr: center;
+    --sp-bt: space-between;
+    --clmn: column;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    font-family: 'Cygre';
+}
+
+a {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: var(--none);
+    color: var(--clr-black);
+    transition: 0.3s ease-in-out;
+}
+
+button {
+    cursor: pointer;
+    outline: var(--none);
+    border: var(--none);
+}
+
+h2 {
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 117%;
+    text-transform: uppercase;
+}
+
+p {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.app-container {
+    height: 1900px;
+    background-color: var(--clr-white);
+}
+
+.container {
+    padding: 5% 0;
+    margin: 0 auto;
+    width: 1440px;
+}

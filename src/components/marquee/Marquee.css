@@ -1,0 +1,41 @@
+.marquee-container {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    background-color: #000;
+}
+
+.marquee-wrapper {
+    display: flex;
+    animation: marquee-animation 16s linear infinite;
+}
+
+.marquee-content {
+    display: flex;
+    align-items: center;
+    margin: 0 20px; /* Добавьте отступ между блоками, если это необходимо */
+}
+
+.marquee-text {
+    color: #fff; /* Используйте цвет вместо переменной для примера */
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.marquee-logo {
+    margin-left: 45px;
+    width: 145px;
+    height: 145px;
+}
+
+@keyframes marquee-animation {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-3280px);
+    }
+}
